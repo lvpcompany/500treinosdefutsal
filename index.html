@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinos de Futsal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header com desconto -->
+    <header class="header">
+        <div class="container">
+            <h1 class="main-title">Treinos de Futsal</h1>
+            <div class="discount-banner" id="discount-banner">
+                <span class="discount-text">
+                    Desconto só <span class="highlight">HOJE</span> nessa página 
+                    <span class="date" id="current-date"></span>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção Hero -->
+    <section class="hero">
+        <div class="container">
+            <h2 class="hero-title">TREINOS DE FUTSAL NA PALMA DA SUA MÃO.</h2>
+        </div>
+    </section>
+
+    <!-- Seção Principal -->
+    <section class="main-section">
+        <div class="container">
+            <h2 class="section-title">+500 Treinos<br>de FUTSAL - 100% em videos, com fichas e apostilas de treinamento.</h2>
+            <h4 class="video-title">ASSISTA O VIDEO ABAIXO <span class="emoji">👇🏻</span></h4>
+            
+            <!-- Video Player -->
+            <div class="video-container">
+                <script>
+                customElements.define("lite-video-player",class extends HTMLElement{
+                    connectedCallback(){
+                        const e=this.attachShadow({mode:"open"}),
+                        t=this.getAttribute.bind(this),
+                        a=t("video-id")||"",
+                        r=t("base-url")||"",
+                        i=(t("aspect-ratio")||"16:9").replace(":","/"),
+                        s=t("params")||"";
+                        e.innerHTML=`<style>:host{display:block;max-width:1280px;margin:auto}.v{position:relative;width:100%;aspect-ratio:${i};overflow:hidden;border-radius:8px}iframe{position:absolute;inset:0;width:100%;height:100%;border:0}</style><div class="v"><iframe src="${r}/embed/${a}?${s}" loading="lazy" allowfullscreen></iframe></div>`
+                    }
+                });
+                </script>
+                <lite-video-player 
+                    video-id="321209ff-5696-45ce-a842-9c1f3a1f0059" 
+                    aspect-ratio="16:9" 
+                    base-url="https://app.litevideo.net" 
+                    params="aspectRatio=16%3A9&coverColor=%230f172a&progressSpeed=fast&progressBarHeight=8&showCover=true&coverStyle=gradient&playIconStyle=circle&playIconSize=medium&showTitle=true&showControls=true&showProgressBar=true&iconColor=%2337ff00&progressBarColor=%2300ff5e&controlsStyle=default&controlsPosition=bottom&controlsColor=%23ffffff&controlsBackground=gradient&hoverEffect=fade&autoPlay=true&loop=true&liveSimulatorEnabled=true&liveSimulatorViewersMin=62&liveSimulatorViewersMax=178&liveSimulatorGrowthRate=fast&domainLockEnabled=false&domainLockDomains=&showComments=true">
+                </lite-video-player>
+            </div>
+
+            <!-- Seção de Produtos (3 colunas) -->
+            <div class="products-section">
+                <!-- Coluna 1 - App Mobile -->
+                <div class="product-column">
+                    <img src="image1.png" alt="App Mobile" class="product-image">
+                    <h3>Aplicativo de treinos direto No seu celular fácil e pratico de usar.</h3>
+                </div>
+
+                <!-- Coluna 2 - Características e Preço -->
+                <div class="product-column pricing-column">
+                    <img src="image2.png" alt="Características" class="product-image">
+                    
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>ACESSO POR 1 ANO</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>+500 VIDEOS DE FORMACIÓN</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Aplicativo de treinos</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Certificado incluso</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Acesso imediato</span>
+                        </div>
+                    </div>
+
+                    <div class="pricing">
+                        <p class="old-price">De <s>R$127,00</s> por<br>APENAS</p>
+                        <p class="new-price">R$ 19,90</p>
+                        <a href="https://pay.hotmart.com/V95439792L?off=qivc08wq&checkoutMode=10" class="cta-button">
+                            <i class="far fa-hand-point-right"></i>
+                            COMPRAR AGORA MESMO
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coluna 3 - Bonus -->
+                <div class="product-column bonus-column">
+                    <img src="image3.png" alt="Bonus" class="product-image">
+                    
+                    <div class="bonus-list">
+                        <div class="bonus-item">
+                            <i class="far fa-times-circle"></i>
+                            <span>Acesso a todos os bônus</span>
+                        </div>
+                        <div class="bonus-item">
+                            <i class="far fa-times-circle"></i>
+                            <span>Ebook com alongamento e exercícios</span>
+                        </div>
+                        <div class="bonus-item">
+                            <i class="far fa-times-circle"></i>
+                            <span>Apostila de alta performance</span>
+                        </div>
+                        <div class="bonus-item">
+                            <i class="far fa-times-circle"></i>
+                            <span>Apostila de treinamento funcional</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
