@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(135deg, #4a6fa5 0%, #2c4a7a 100%);
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    position: relative;
+}
+
+.company-name {
+    font-size: 16px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.discount-banner {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff6b35, #f7931e);
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    animation: pulse 2s infinite;
+}
+
+.discount-text {
+    color: white;
+    margin-right: 5px;
+}
+
+.page-text {
+    color: white;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Main Content */
+.main-content {
+    background: white;
+    padding: 60px 0;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    color: #4a6fa5;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #4a6fa5;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.video-section {
+    margin: 50px 0;
+}
+
+.video-title {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cta-button-container {
+    margin: 40px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(45deg, #28a745, #20c997);
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 5px 20px rgba(40, 167, 69, 0.3);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
+}
+
+/* Benefits Section */
+.benefits {
+    margin: 80px 0;
+}
+
+.benefits-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.benefits-list {
+    space-y: 20px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.checkmark {
+    margin-right: 15px;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.benefits-image {
+    text-align: center;
+}
+
+.benefits-image img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
+}
+
+/* Access Section */
+.access-section {
+    text-align: center;
+    margin: 100px 0;
+    padding: 60px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 20px;
+}
+
+.access-title {
+    font-size: 2.5rem;
+    color: #4a6fa5;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.access-subtitle {
+    font-size: 2rem;
+    color: #4a6fa5;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.arrow-down {
+    font-size: 2rem;
+    color: #28a745;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
+/* Certificate Section */
+.certificate-section {
+    text-align: center;
+    margin: 100px 0;
+    padding: 60px 0;
+}
+
+.certificate-title {
+    font-size: 2.5rem;
+    color: #4a6fa5;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.certificate-subtitle {
+    font-size: 2rem;
+    color: #4a6fa5;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.certificate-recognition {
+    font-size: 1.5rem;
+    color: #28a745;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.certificate-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.certificate-details {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #666;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.certificate-access {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+/* Testimonials Section */
+.testimonials {
+    margin: 100px 0;
+    text-align: center;
+}
+
+.testimonials-title {
+    font-size: 2.5rem;
+    color: #4a6fa5;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Purchase Section */
+.purchase-section {
+    background: linear-gradient(135deg, #4a6fa5 0%, #2c4a7a 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+    border-radius: 20px;
+    margin: 100px 0;
+}
+
+.purchase-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.pricing {
+    margin-bottom: 40px;
+}
+
+.old-price {
+    font-size: 1.2rem;
+    text-decoration: line-through;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.new-price {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.installments {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+}
+
+.guarantees {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.guarantee-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+
+.guarantee-item span:first-child {
+    font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .benefits-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .access-title,
+    .certificate-title,
+    .testimonials-title,
+    .purchase-title {
+        font-size: 2rem;
+    }
+    
+    .access-subtitle,
+    .certificate-subtitle {
+        font-size: 1.5rem;
+    }
+    
+    .new-price {
+        font-size: 2.5rem;
+    }
+    
+    .guarantees {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .testimonials-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .main-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .benefit-item {
+        font-size: 1rem;
+    }
+    
+    .access-title,
+    .certificate-title,
+    .testimonials-title,
+    .purchase-title {
+        font-size: 1.8rem;
+    }
+    
+    .new-price {
+        font-size: 2rem;
+    }
+}
+
