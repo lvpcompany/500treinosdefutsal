@@ -936,42 +936,7 @@ APENAS</h2></h2>				</div>
     <input type="email" placeholder="Seu Melhor E-mail">
     <input type="text" placeholder="Telefone (WhatsApp)">
 
-    <button onclick="mostrarPix()">Comprar Agora com PIX</button>
 
-    <div class="pix-box" id="pix-box">
-      <p>Escaneie o QR Code ou copie o código abaixo:</p>
-
-      <img id="qrcode-img" alt="QR Code PIX">
-
-      <div class="pix-code" id="pix-code"></div>
-      <button class="copy-btn" onclick="copiarPix()">Copiar Código PIX</button>
-    </div>
-  </div>
-</div>
-
-<script>
-  const codigoPix = "00020101021226800014BR.GOV.BCB.PIX0136d206d4bb-fa9a-4f5a-acf0-774d251bf31a0218Pagamento lucas477520400005303986540534.905802BR5925LUCAS VASCONCELOS PIETRAN6008SALVADOR62290525QRCCY5wPtVOdw2wkGq63IeF59630462B0";
-
-  function mostrarPix() {
-    const pixBox = document.getElementById("pix-box");
-    const qrcodeImg = document.getElementById("qrcode-img");
-
-    pixBox.style.display = "block";
-    document.getElementById("pix-code").innerText = codigoPix;
-
-    qrcodeImg.src = "https://edfcursosonline.com/wp-content/uploads/2025/09/Pix-de-3490.jpeg?" + new Date().getTime();
-    qrcodeImg.classList.add("mostrar");
-  }
-
-  function copiarPix() {
-    navigator.clipboard.writeText(codigoPix).then(() => {
-      alert("Código PIX copiado com sucesso!");
-    });
-  }
-</script>
-
-</body>
-</html>
 				</div>
 				</div>
 				<div class="elementor-element elementor-element-e95fdcf elementor-view-default elementor-widget elementor-widget-icon" data-id="e95fdcf" data-element_type="widget" data-widget_type="icon.default">
